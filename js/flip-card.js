@@ -1,10 +1,10 @@
 var init = function() {
-    var card = document.getElementsByClassName("card");  
-    
-    for (i=0;i < card.length;i++){
-        card[i].addEventListener( 'click', function(){
-            this.toggleClassName('flipped');
-        }, false);
+    var order_btn = $('.order_btn');  
+    console.log(order_btn);
+    for (i=0;i < order_btn.length;i++){
+        $(order_btn[i]).click(function (evt) {
+            $(evt.target).parent().parent().parent().toggleClass('flipped');
+        });
     }
     
     

@@ -11,13 +11,12 @@
               perspective: 800px;
     }
 
-    .card {
+    .card_container {
       width: 75vw;
-      height: 100%;
+      height: 515.47px;
         margin-right:4vw;
         margin-left:4vw;
     float:left;
-        
      transition-property: transform;
             transition-duration: 0.5s;
             transition-timing-function: ease-out;
@@ -32,24 +31,17 @@
               transform-style: preserve-3d;
     }
 
-    .card.flipped {
+    .card_container.flipped {
       -webkit-transform: rotateY( 180deg );
          -moz-transform: rotateY( 180deg );
            -o-transform: rotateY( 180deg );
               transform: rotateY( 180deg );
     }
     .first_card {
-        margin-left:12.5vw;
+        margin-left:14.5vw;
     }
-    .card img {
+    .card_container .back {
       display: block;
-      height: 100%;
-      width: 100%;
-      line-height: 260px;
-      color: white;
-      text-align: center;
-      font-weight: bold;
-      font-size: 140px;
       position: absolute;
       -webkit-backface-visibility: hidden;
          -moz-backface-visibility: hidden;
@@ -57,15 +49,108 @@
               backface-visibility: hidden;
     }
 
-    #taizu .front {
+    .card_container div {
+      -webkit-backface-visibility: hidden;
+         -moz-backface-visibility: hidden;
+           -o-backface-visibility: hidden;
+              backface-visibility: hidden;
     }
 
-    .card .back {
+    .card_container div.card_bottom {
+        display: block;
+        background-color:white;
+        width:100%;
+        height:145.47px;
+        line-height: 260px;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        position: relative;
+    }
+
+    .front {
+        box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+        position:absolute;
+      -webkit-transform: rotateY( 0deg );
+         -moz-transform: rotateY( 0deg );
+           -o-transform: rotateY( 0deg );
+              transform: rotateY( 0deg );
+    }
+
+
+    .card_bottom button{
+            background-color: rgb(253,92,99);
+        border: none;
+        box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
+        font-size: 20px;
+        font-family: lucida grande;
+        cursor: pointer;
+        color: white;
+        width: 147.56px;
+        height: 39.31px;
+        padding: 0px;
+        margin-top: 0;
+        position: absolute;
+        top: 52px;
+        right: 72.725px;
+    }
+
+    .card_bottom img{
+        height: 35.8360px;
+        width: 35.8360px;
+        top: -14px;
+        left: 128.085px;
+        position: absolute;
+
+    }
+
+    .card_bottom p.price{
+        line-height: 0px;
+        position: absolute;
+        width: 60px;
+        height: 40px;
+        text-align: left;
+        color: rgb(253,92,99);
+        top: 0px;
+        padding-left: 15px;
+        font-size:20px;
+    }
+
+    .card_bottom p.name{
+        line-height: 0px;
+        position: absolute;
+        width: 150px;
+        height: 40px;
+        text-align: right;
+        color: rgba(51,51,51,0.87);
+        right: 0px;
+        top:0px;
+        padding-right: 15px;
+    }
+
+    .card_bottom p.name span.dish{
+        font-weight: bold;
+        display: block;
+        text-align: right;
+        position:relative;
+        font-size:20px;
+    }
+    .card_bottom p.name span.restaurant{
+        top: 17px;
+        position: relative;
+        font-size: 15px;
+        font-weight: normal;
+
+    }
+
+    .card_container .back {
+        box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
       -webkit-transform: rotateY( 180deg );
          -moz-transform: rotateY( 180deg );
            -o-transform: rotateY( 180deg );
               transform: rotateY( 180deg );
     }
+
 
 
 
@@ -118,7 +203,6 @@ button {
 }
 
 footer {
-  border-top: 1px solid #CCC;
   font-size: 0.8em;
   position: relative;
   z-index: 100;
