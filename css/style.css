@@ -14,8 +14,8 @@
     .card_container {
       width: 75vw;
       height: 515.47px;
-        margin-right:4vw;
-        margin-left:4vw;
+        margin-right:2vw;
+        margin-left:2vw;
     float:left;
      transition-property: transform;
             transition-duration: 0.5s;
@@ -83,7 +83,6 @@
         border: none;
         box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
         font-size: 20px;
-        font-family: lucida grande;
         cursor: pointer;
         color: white;
         width: 147.56px;
@@ -159,7 +158,7 @@ section, footer, nav {
 }
 
 body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Assistant', 'Helvetica Neue', Arial, sans-serif;
   -webkit-text-size-adjust: none;
   color: #333;
   max-width: 720px;
