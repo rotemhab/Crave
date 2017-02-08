@@ -1,7 +1,7 @@
         
         var IMG_WIDTH = screen.width*0.79;
         var currentImg = 0;
-        var maxImages = 6;
+        var maxImages = 7;
         var speed = 500;
 
         var content;
